@@ -1,6 +1,5 @@
 // Getting input via STDIN
 const readline = require("readline");
-const fs = require("fs");
 const {
   difference,
   oddEven,
@@ -14,7 +13,7 @@ const {
 } = require("./session01");
 
 const inp = readline.createInterface({
-  input: fs.createReadStream("input.txt"),
+  input: process.stdin,
 });
 
 const userInput = [];
