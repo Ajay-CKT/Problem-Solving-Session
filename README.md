@@ -1,33 +1,17 @@
 # Problem Solving Session
 
-| 01  | [Session 1](#session-01)  | [Post Session 1](#post-session-01) |
-| --- | ------------------------- | ---------------------------------- |
-| 02  | [Session 2](#session-02)  | [Post Session 2](#post-session-02) |
-| --- | ------------------------- | ---------------------------------- |
-
-| 03  | [Session 3](#session-03) | [Post Session 3](#post-session-03) |
-| --- | ------------------------ | ---------------------------------- |
-
-| 04  | [Session 4] | [Post Session 4] |
-| --- | ----------- | ---------------- |
-
-| 05  | [Session 5] | [Post Session 5] |
-| --- | ----------- | ---------------- |
-
-| 06  | [Session 6] | [Post Session 6] |
-| --- | ----------- | ---------------- |
-
-| 07  | [Session 7] | [Post Session 7] |
-| --- | ----------- | ---------------- |
-
-| 08  | [Session 8] | [Post Session 8] |
-| --- | ----------- | ---------------- |
-
-| 09  | [Session 9] | [Post Session 9] |
-| --- | ----------- | ---------------- |
-
-| 10  | [Session 10] | [Post Session 10] |
-| --- | ------------ | ----------------- |
+| No. | Session                   | Post Session                        |
+| --- | ------------------------- | ----------------------------------- |
+| 01  | [Session 01](#session-01) | [Post Session 01](#post-session-01) |
+| 02  | [Session 02](#session-02) | [Post Session 02](#post-session-02) |
+| 03  | [Session 03](#session-03) | [Post Session 03](#post-session-03) |
+| 04  | [Session 04](#session-04) | [Post Session 04](#post-session-04) |
+| 05  | [Session 05](#session-05) | [Post Session 05](#post-session-05) |
+| 06  | [Session 06](#session-06) | [Post Session 06](#post-session-06) |
+| 07  | [Session 07](#session-07) | [Post Session 07](#post-session-07) |
+| 08  | [Session 08](#session-08) | [Post Session 08](#post-session-08) |
+| 09  | [Session 09](#session-09) | [Post Session 09](#post-session-09) |
+| 10  | [Session 10](#session-10) | [Post Session 10](#post-session-10) |
 
 ## Session 01
 
@@ -136,3 +120,31 @@ console.log(square(num));
 ## Session 03
 
 ### Post Session 03
+
+## Session 04
+
+### Post Session 04
+
+## Session 05
+
+### Post Session 05
+
+## Session 06
+
+### Post Session 06
+
+## Session 07
+
+### Post Session 07
+
+## Session 08
+
+### Post Session 08
+
+## Session 09
+
+### Post Session 09
+
+## Session 10
+
+### Post Session 10
