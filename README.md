@@ -115,6 +115,36 @@ console.log(square(num));
 
 ## Session 02
 
+```javascript
+// Sum of digits in a number.
+const num = +userInput[0];
+console.log(sumOfDigits(num));
+```
+
+```javascript
+// Calculate the factorial of a number.
+const num = +userInput[0];
+console.log(factorial(num));
+```
+
+```javascript
+// Generate the Fibonacci sequence up to N terms.(Space Complexity)
+const num = +userInput[0];
+fibonacci(num);
+```
+
+```javascript
+// Check if a number is prime. (Time Complexity)
+const num = +userInput[0];
+console.log(isPrime(num));
+```
+
+```javascript
+// Print a hollow square pattern.
+const size = +userInput[0];
+console.log(hollowSquare(size));
+```
+
 ### Post Session 02
 
 ## Session 03

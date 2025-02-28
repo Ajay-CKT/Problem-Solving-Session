@@ -18,6 +18,13 @@ const {
   areaOfCircle,
   vowelOrNot,
 } = require("./session01");
+const {
+  sumOfDigits,
+  factorial,
+  fibonacci,
+  isPrime,
+  hollowSquare,
+} = require("./session02");
 
 const inp = readline.createInterface({
   input: process.stdin,
