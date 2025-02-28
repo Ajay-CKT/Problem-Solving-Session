@@ -1,16 +1,69 @@
-//! Determine if a number is positive or negative.
-//! Find the sum of two integers.
-//! Identify the maximum, middle and minimum of three numbers.
-//! Count the number of digits in a number.
-//! Check if a string contains only alphabets.
-//! Calculate the area of a circle with a given radius.
-//! Check if a character is a vowel.
-
 // todo Post - Session Practice Questions:
 
 const maxOfTwo = (num1, num2) => (num1 > num2 ? num1 : num2);
+const minOfTwo = (num1, num2) => (num1 < num2 ? num1 : num2);
 
 const session01 = {
+  // Determine if a number is positive or negative.
+  findInteger: function (num) {
+    if (num > 0) {
+      return "Positive";
+    } else if (num === 0) {
+      return "Zero";
+    } else {
+      return "Negative";
+    }
+  },
+  // Find the sum of two integers.
+  sum: function (num1, num2) {
+    return num1 + num2;
+  },
+  // Identify the maximum, middle and minimum of three numbers.
+  findMaxMidMin: function (num1, num2, num3) {
+    let maximum = maxOfTwo(maxOfTwo(num1, num2), num3);
+    let minimum = minOfTwo(minOfTwo(num1, num2), num3);
+    let middle = num1 + num2 + num3 - maximum - minimum;
+    return { max: maximum, mid: middle, min: minimum };
+  },
+  // Count the number of digits in a number.
+  countDigits: function (num) {
+    let count = 0;
+    while (num > 0) {
+      count++;
+      num = Math.floor(num / 10);
+    }
+    return count;
+  },
+  // Check if a string contains only alphabets.
+  onlyAlpha: function (str) {
+    if (str.length === 0) return false;
+    for (let i = 0, len = str.length; i < len; i++) {
+      let charcode = str.charCodeAt(i);
+      if (
+        !(charcode >= 65 && charcode <= 90) &&
+        !(charcode >= 97 && charcode <= 122)
+      ) {
+        return false;
+      }
+    }
+    return true;
+  },
+  // Calculate the area of a circle with a given radius.
+  areaOfCircle: function (radius) {
+    return ((22 / 7) * radius * radius).toFixed(2);
+  },
+  // Check if a character is a vowel.
+  vowelOrNot: function (char) {
+    let i = 0;
+    if (
+      !(char.charCodeAt(i) >= 65 && char.charCodeAt(i) <= 90) &&
+      !(char.charCodeAt(i) >= 97 && char.charCodeAt(i) <= 122)
+    ) {
+      return false;
+    }
+    return true;
+  },
+
   // todo Calculate the difference between two integers.
   difference: function (num1, num2) {
     return num1 > num2 ? num1 - num2 : num2 - num1;
