@@ -29,6 +29,8 @@ const {
   palindrome,
   coPrimes,
   allDivisors,
+  checkboard,
+  diamond,
 } = require("./session02");
 
 const inp = readline.createInterface({
@@ -41,4 +43,7 @@ inp.on("line", (data) => {
   userInput.push(data);
 });
 
-inp.on("close", () => {});
+inp.on("close", () => {
+  const size = Number(userInput[0]);
+  diamond(size);
+});

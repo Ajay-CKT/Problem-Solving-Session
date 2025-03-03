@@ -179,6 +179,8 @@ console.log(allDivisors(num));
 
 ```javascript
 // todo Print a checkerboard pattern.
+const size = Number(userInput[0]);
+checkboard(size);
 ```
 
 ```javascript

@@ -116,5 +116,33 @@ const session02 = {
       return result.join(" ");
     }
   },
+  // todo Print a checkerboard pattern.
+  checkboard: function (size) {
+    for (let row = 0; row < size; row++) {
+      let line = [];
+      for (let col = 0; col < size; col++) {
+        if (
+          col === row ||
+          (row % 2 === 0 && col % 2 === 0) ||
+          (row % 2 !== 0 && col % 2 !== 0)
+        ) {
+          line.push("*");
+        } else {
+          line.push("#");
+        }
+      }
+      console.log(line.join(" "));
+    }
+  },
+  // todo Print a diamond pattern of stars.
+  diamond: function (size) {
+    if (size % 2 === 0) ++size;
+    const mid = Math.floor(size / 2);
+    for (let row = 0; row < size; row++) {
+      let stars = row <= mid ? 2 * row + 1 : 2 * (size - row - 1) + 1;
+      let spaces = Math.floor((size - stars) / 2);
+      console.log(" ".repeat(spaces) + "*".repeat(stars) + " ".repeat(spaces));
+    }
+  },
 };
 module.exports = session02;
