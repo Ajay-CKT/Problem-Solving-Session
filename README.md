@@ -161,14 +161,20 @@ console.log(gcd(num1, num2));
 
 ```javascript
 // todo Check if a number is a palindrome.
+const num = Number(userInput[0]);
+console.log(palindrome(num));
 ```
 
 ```javascript
 // todo Check if two numbers are coprime.
+const [num1, num2] = userInput[0].split(" ").map(Number);
+console.log(coPrimes(num1, num2));
 ```
 
 ```javascript
 // todo Find all divisors of a number.
+const num = Number(userInput[0]);
+console.log(allDivisors(num));
 ```
 
 ```javascript

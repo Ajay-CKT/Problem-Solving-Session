@@ -26,6 +26,9 @@ const {
   hollowSquare,
   lcm,
   gcd,
+  palindrome,
+  coPrimes,
+  allDivisors,
 } = require("./session02");
 
 const inp = readline.createInterface({

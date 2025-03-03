@@ -81,10 +81,39 @@ const session02 = {
   gcd: function (num1, num2) {
     let divisor = min(num1, num2);
     while (divisor != 0) {
-      if (num1 % divisor === 0 && num2 % divisor === 0) {
-        return `Gcd of ${num1} and ${num2} is ${divisor}`;
-      }
+      if (num1 % divisor === 0 && num2 % divisor === 0) return divisor;
       --divisor;
+    }
+  },
+  // todo Check if a number is a palindrome.
+  palindrome: function (num) {
+    let check = 0;
+    let ogNum = num;
+    if (num > 0 && num < 10) {
+      return `${num} is a single digit value`;
+    }
+    while (num > 0) {
+      check = check * 10 + (num % 10);
+      num = Math.floor(num / 10);
+    }
+    return ogNum === check;
+  },
+  // todo Check if two numbers are coprime.
+  coPrimes: function (num1, num2) {
+    return session02.gcd(num1, num2) === 1;
+  },
+  //
+  allDivisors: function (num) {
+    if (num <= 0) return [];
+    if (num === 1) return [1];
+    if (num > 1) {
+      const result = [1, num];
+      for (let i = 2; i <= Math.floor(num / 2); i++) {
+        if (num % i === 0) {
+          result.push(i);
+        }
+      }
+      return result.join(" ");
     }
   },
 };
