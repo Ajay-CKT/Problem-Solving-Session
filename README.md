@@ -147,6 +147,50 @@ console.log(hollowSquare(size));
 
 ### Post Session 02
 
+```javascript
+// todo Find the LCM of two numbers.
+const [num1, num2] = userInput[0].split(" ").map(Number);
+console.log(lcm(num1, num2));
+```
+
+```javascript
+// todo Calculate the GCD of two numbers.
+const [num1, num2] = userInput[0].split(" ").map(Number);
+console.log(gcd(num1, num2));
+```
+
+```javascript
+// todo Check if a number is a palindrome.
+```
+
+```javascript
+// todo Check if two numbers are coprime.
+```
+
+```javascript
+// todo Find all divisors of a number.
+```
+
+```javascript
+// todo Print a checkerboard pattern.
+```
+
+```javascript
+// todo Print a diamond pattern of stars.
+```
+
+```javascript
+// todo Print Pascal’s triangle up to N rows.
+```
+
+```javascript
+// todo Print an inverted triangle pattern of stars.
+```
+
+```javascript
+// todo Generate a pyramid pattern of numbers.
+```
+
 ## Session 03
 
 ### Post Session 03

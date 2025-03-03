@@ -1,3 +1,6 @@
+const max = (num1, num2) => (num1 > num2 ? num1 : num2);
+const min = (num1, num2) => (num1 < num2 ? num1 : num2);
+
 const session02 = {
   // Sum of digits in a number.
   sumOfDigits: function (num) {
@@ -62,6 +65,26 @@ const session02 = {
         else line.push(" ");
       }
       console.log(line.join(" "));
+    }
+  },
+  // todo Find the LCM of two numbers.
+  lcm: function (num1, num2) {
+    let multiple = max(num1, num2);
+    while (true) {
+      if (multiple % num1 === 0 && multiple % num2 === 0) {
+        return `Lcm of ${num1} and ${num2} is ${multiple}`;
+      }
+      multiple++;
+    }
+  },
+  // todo Calculate the GCD of two numbers.
+  gcd: function (num1, num2) {
+    let divisor = min(num1, num2);
+    while (divisor != 0) {
+      if (num1 % divisor === 0 && num2 % divisor === 0) {
+        return `Gcd of ${num1} and ${num2} is ${divisor}`;
+      }
+      --divisor;
     }
   },
 };

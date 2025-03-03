@@ -24,6 +24,8 @@ const {
   fibonacci,
   isPrime,
   hollowSquare,
+  lcm,
+  gcd,
 } = require("./session02");
 
 const inp = readline.createInterface({
